@@ -1,17 +1,20 @@
 Hack Assembler (Nand2Tetris - Project 6)
 Bu proje, Nand2Tetris kursunun/kitabının 6. projesi kapsamında geliştirilmiş, Hack Assembly dilinde yazılmış kaynak kodlarını (.asm) donanım simülatörünün çalıştırabileceği saf 1 ve 0'lardan oluşan makine diline (.hack) çeviren masaüstü konsol aracıdır.
 
-🚀 Projenin Amacı
-Bilgisayar mimarisinin en alt katmanı ile yüksek seviyeli yazılım dünyası arasındaki köprüyü kurmak amacıyla tasarlanmıştır. Bu araç sayesinde, insan okunabilir assembly komutları (semboller, etiketler ve değişkenler dahil) işlemcinin doğrudan yürütebileceği binary komut setine dönüştürülür.
+# 🚀 Projenin Amacı
 
-🛠️ Kullanılan Teknolojiler ve Araçlar
+* Bilgisayar mimarisinin en alt katmanı ile yüksek seviyeli yazılım dünyası arasındaki köprüyü kurmak amacıyla tasarlanmıştır. Bu araç sayesinde, insan okunabilir assembly komutları (semboller, etiketler ve değişkenler dahil) işlemcinin doğrudan yürütebileceği binary komut setine dönüştürülür.
+
+# 🛠️ Kullanılan Teknolojiler ve Araçlar
+
 Programlama Dili: C# (.NET)
 
-Veri Yapıları: Dictionary (Symbol Table yönetimi için)
+* Veri Yapıları: Dictionary (Symbol Table yönetimi için)
 
-Mimari: İki geçişli (Two-pass) derleme mantığı (Önce etiketlerin okunması, sonra kod çevirisi).
+* Mimari: İki geçişli (Two-pass) derleme mantığı (Önce etiketlerin okunması, sonra kod çevirisi).
 
-⚙️ Nasıl Çalışır? (Mimarinin İşleyişi)
+# ⚙️ Nasıl Çalışır? (Mimarinin İşleyişi)
+
 Assembler, kaynak .asm dosyasını işlerken sırasıyla şu aşamalardan geçer:
 
 Preprocessor & Parser (Ayrıştırma): Dosyadaki boşlukları ve yorum satırlarını (//) temizler. Her satırı okuyarak komutun tipini ayırt eder:
@@ -32,6 +35,7 @@ Birinci geçişte tüm etiketleri (LABEL) bulup ROM adresleriyle birlikte hafız
 
 Code Generation (Kod Üretimi): Ayrıştırılan her parça (dest, comp, jump ve A-komutlarının binary karşılıkları) 16-bitlik string dizilerine çevrilerek .hack uzantılı çıktı dosyasına yazılır.
 
+```text
 📂 Proje Yapısı
 Plaintext
 HackAssembler/
