@@ -1,4 +1,4 @@
-Hack Assembler (Nand2Tetris - Project 6)
+# Hack Assembler (Nand2Tetris - Project 6)
 Bu proje, Nand2Tetris kursunun/kitabının 6. projesi kapsamında geliştirilmiş, Hack Assembly dilinde yazılmış kaynak kodlarını (.asm) donanım simülatörünün çalıştırabileceği saf 1 ve 0'lardan oluşan makine diline (.hack) çeviren masaüstü konsol aracıdır.
 
 # 🚀 Projenin Amacı
